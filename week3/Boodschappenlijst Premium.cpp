@@ -42,7 +42,7 @@ int main()
     cout << "Aantal:    Product:    Prijs:" << endl;
     for (int i = 0; i < hoeveelproducten; i++)
     {
-        cout << aantal[i] << "\t" << product[i] << "\t" << prijs[i] << "\t\t" << endl;
+        cout << aantal[i] << "\t" << product[i] << "\t" << prijs[i] * aantal[i] << "\t\t" << endl;
     }
 
 }
