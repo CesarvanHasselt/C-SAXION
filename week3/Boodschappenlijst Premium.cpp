@@ -27,7 +27,7 @@ int main()
 
     for (int i = 0; i < hoeveelproducten; i++)
     {
-        cout << "Voer product "<< i + 1 << " in:" << endl;
+        cout << "Voer product " << i + 1 << " in:" << endl;
         cin >> nieuwproduct;
         product.push_back(nieuwproduct);
 
@@ -42,7 +42,7 @@ int main()
     cout << "Aantal:    Product:    Prijs:" << endl;
     for (int i = 0; i < hoeveelproducten; i++)
     {
-        cout << aantal[i] << "\t" << product[i] << "\t" << prijs[i] * aantal[i] << "\t\t" << endl;
+        cout << aantal[i] << "\t" << product[i] << "\t\t" << prijs[i] * aantal[i] << "\t\t" << endl;
     }
 
 }
