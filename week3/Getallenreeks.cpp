@@ -18,7 +18,7 @@ int main()
     int aantalGetallen = 0;
     double getal = 0;
     double som = 0;
-    double min = 999999;//niet heel nettjes weet ik
+    double min = 0;
     double max = 0;
 
     cout << "hoe veel getallen\n";
@@ -26,16 +26,19 @@ int main()
 
     for (int i = 0; i < aantalGetallen; i++)
     {
-        cout << "voer getal " << i + 1 << "in\n";
+        cout << "voer getal " << i + 1 << " in\n";
         cin >> getal;
         getallen.push_back(getal);
-
     }
+
+    min = getallen[0];
+    max = getallen[0];
 
     for (int i = 0; i < getallen.size(); i++)
     {
         som = som + getallen[i];
-        cout << "getallen ding" << getallen[i];
+        cout << "getallen ding " << getallen[i] << "\n";
+
         if (getallen[i] > max)
         {
             max = getallen[i];
@@ -48,8 +51,8 @@ int main()
 
     cout << "De kleinste waarde is: " << min << "\n";
     cout << "De grootste waarde is: " << max << "\n";
-    cout << "De totale waarde is: " << som / (double)aantalGetallen << "\n";
+    cout << "De totale waarde is: " << som << "\n";
     cout << "De gemiddelde waarde is: " << som / (double)aantalGetallen << "\n";
-
 }
+
 
