@@ -43,5 +43,5 @@ int main()
             naamdeelnemer = deelnemer[i];
        }
     }
-    cout << "winnner chicken dinner" << maxscore << naamdeelnemer << endl;
+    cout << "De winaar is: " << naamdeelnemer << "met een score van: " << maxscore << endl;
 }
